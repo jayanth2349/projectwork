@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asus Rog 8</title>
+    <link rel="stylesheet" href="mob.css">
+    <link rel="icon" href="download.png">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="c:\Users\gowda\Documents\web D\website\75892d36e1bd487573e4b1bf05da5352-removebg-preview (1).png">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="C:\Users\gowda\Documents\exam topics\project assign\homepage.html">Home</a></li>
+                    <li><a href="C:\Users\gowda\Documents\exam topics\project assign\mobile-page.html">Mobiles</a></li>
+                    <li><a href="C:\Users\gowda\Documents\exam topics\project assign\accessories.html">Accessories</a></li>
+                    <li><a href="C:\Users\gowda\Documents\exam topics\project assign\mobilecart.html">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="h732 (1).png" class="mob"> 
+            <div id="circ">
+                <div class="feature one">
+                    <img src="download__6_-removebg-preview.png">
+                    <h1>Camera</h1>
+                    <p>50MP + 13MP + 5MP | 32MP Front Camera</p>
+                </div>
+                <div class="feature two">
+                    <img src="processor.png">
+                    <h1>Processor</h1>
+                    <p>12 GB RAM | 256 GB ROM</p>
+                       <p>Qualcomm® Snapdragon® 8+ Gen 2 Mobile Processor</p>
+                </div>
+                <div class="feature three">
+                    <img src="download__7_-removebg-preview.png">
+                <h1>Display</h1>
+                <p>17.22 cm (6.78 inch) Full HD+ Display, </p>
+                
+              </div>
+                <div class="feature four">
+                    <img src="images-removebg-preview.png">
+                    <h1>Battery</h1>
+                    <p>6000 mAh Lithium Polymer Battery,</p>
+                    <p>supports Quick Charge, 65W wired, 100% in 42 min </p>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <img src="c:\Users\gowda\Documents\exam topics\project assign\png-transparent-arrow-computer-icons-font-awesome-button-arrow.png" id="btn1">
+            <h3>Features</h3>
+            <img src="c:\Users\gowda\Documents\exam topics\project assign\png-transparent-arrow-computer-icons-font-awesome-button-arrow.png" id="btn2">
+        </div>
+        <div class="btn-b"><a href="C:\Users\gowda\Documents\exam topics\project assign\mobilecart.html">BUY NOW</a></div>
+
+    </div>
+
+
+    <script>
+        var circ = document.getElementById("circ");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+
+        var rotateval = circ.style.transform;
+        var rotatesum;
+
+        btn1.onclick = function()
+        {
+            rotatesum = rotateval + "rotate(-90deg)";
+            circ.style.transform = rotatesum;
+            rotateval = rotatesum;  
+        }
+        
+        btn2.onclick = function()
+        {
+            rotatesum = rotateval + "rotate(90deg)";
+            circ.style.transform = rotatesum;
+            rotateval = rotatesum;  
+        }
+
+
+    </script>
+
+
+</body>
+</html>
